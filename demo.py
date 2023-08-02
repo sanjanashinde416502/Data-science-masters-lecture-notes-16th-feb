@@ -8,6 +8,5 @@ mydb = mysql.connector.connect(
 )
 print(mydb)
 mycursor = mydb.cursor()
-mycursor.execute("SHOW DATABASES")
-for x in mycursor:
-  print(x)
+mycursor.execute("create database if not exists Student_all_details_python ")
+mydb .close()
